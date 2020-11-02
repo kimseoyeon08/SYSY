@@ -1,0 +1,539 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+     list-style: none;
+ }
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/*layout*/
+body {
+    font-family: 'Nanum Gothic', sans-serif; 
+    font-size: 16px;
+    color: #333;
+    line-height: 1.25;
+    }
+    #fx {
+        position: fixed;
+        top: 5px;
+        left: 5px;
+        width: 50px;
+        height: 50px;
+        z-index: 10;
+        background-image: url('../img16/house_50x50.png'); 
+    }
+header{
+    width: 100%;
+    height: 90px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+nav{
+    height: 60px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a9db80+0,96c56f+100;Green+3D+%232 */
+    background: rgba(121, 226, 230, 0.63); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(121, 226, 230, 0.63) 0%, rgba(121, 226, 230, 0.63) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(121, 226, 230, 0.63) 0%,rgba(121, 226, 230, 0.63) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(121, 226, 230, 0.63) 0%,rgba(121, 226, 230, 0.63) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 ); /* IE6-9 */
+    }
+#main-nav{
+        list-style: none;
+        margin: 0;
+             }
+#main-nav .span{display: inline-block;
+                 color:white;
+                margin: 10px 20px;
+                margin-right: 40px;
+                
+                }
+.outer-menu-item{
+    display: inline-block;
+    margin: 5px 20px;
+    position: relative;
+    
+}
+.outer-menu-item:hover{
+    color:darkblue;
+}
+.menu-title{
+    display: block;
+    height: 30px; line-height: 30px;
+    text-align: center;
+    padding: 5px 20px;
+}
+.inner-menu {
+    display: none;
+    position: absolute;
+    top: 40px; left: 0;
+    width: 100%;
+    background:rgba(0, 139, 139, 0.589);
+    box-shadow: 0 2px 6px rgba(5,5, 5, 0.9);
+    z-index: 1000;
+    text-align: center;
+    list-style: none;
+}
+.inner-menu-item>a{
+    display: block;
+    padding: 5px 10px;
+    color: black;
+}
+.inner-menu-item>a:hover{
+    background:black;
+    color: white;
+}
+
+
+/*section.main*/
+.main {
+    width: 100%;
+    height: auto;
+    background-image: url(../img16/road11.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.main .inner{
+    width: 1400px;
+    height: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.main .inner .mainTitle {
+    width: 653px;
+    height: auto;
+    /*position: absolute;
+    top: 30%;
+    left: 0;*/
+}
+.main .inner .mainTitle h2{
+    font-size: 70px;
+    line-height: 1.3;
+    animation-name: titani;
+    animation-duration: 1s;
+    color: blanchedalmond;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+}
+@keyframes titani{
+    0%{
+        opacity: 0;
+        top: 0;
+    }
+    30%{
+        opacity: 0;
+        top: 0;
+    }
+    100%{
+        opacity: 1;
+        top: 10%;
+    }
+}
+.main .inner .mainTitle p{
+    font-size: 19px;
+    line-height: 1.6;
+    position: absolute;
+    left: 50px;
+    top: 35%;
+    animation-name: titanip;
+    animation-duration: 0.5s;
+    color: white;
+}
+@keyframes titanip{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    30%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.video{
+    width: 600px; /*너비*/
+    padding: 20px;/*패딩*/
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    background-color: rgba(112, 108, 108, 0.616);
+    border: 1px solid #ccc;/*<div>요소에 테두리 표시*/
+}
+.photo {
+    width: 100%; 
+    padding-top: 80px;
+        }
+.photo ul {
+    width: 500px; 
+    height: 600px;
+    overflow: hidden; 
+    position: absolute;
+    right: 0.5%;
+    top: 20%;
+        }
+.photo ul li {
+    animation-name: slid-up; 
+    animation-duration: 1.1s; 
+    float: left; 
+    width: 31.3333%; 
+    margin-right: 3%; 
+    margin-bottom: 50px; 
+        }
+.photo ul li a{
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+    z-index: -1;
+        }
+.photo ul li a:hover {
+         transform: translateY(-20px);
+                transition: all 0.4s;
+            }
+.photo ul li a:hover p.img img {
+    opacity: 0.8; 
+    transition: all 0.3s;
+            }
+.photo ul li a{
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+    transition: all 0.3s;
+        }
+.photo ul li a p.img{
+    width: 100%;
+        }
+.photo ul li a p.img img {
+    width: 300px;
+        }
+.photo ul li a h3 {
+    margin-top: 50px; 
+    padding-left: 25px; 
+    position: relative; 
+    color: rgb(110, 226, 235);
+        } 
+.photo ul li p{
+    color: white;
+    display: block;
+
+}
+
+/*section.happy*/
+.happy{
+    width: 1400px;
+    margin: 0 auto;
+    color: #333;
+    margin-top: 100px;
+}
+.happy h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+.happy h2.colortext{
+    color: #f57260;
+}
+.happy ul{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.happy ul li{
+    float: left;
+    width: 32.2%;
+    margin-right: 1.7%;
+    margin-bottom: 80px;
+    background: #c5cdbe;
+}
+.happy ul li:nth-child(2){
+    background: #e59b90;
+}
+.happy ul li:nth-child(3) {
+    margin-right: 0;
+    background: #dfcfc0;
+}
+.happy ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 50px 30px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.happy ul li p{
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+.happy ul li h3{
+    font-size: 26px;
+    margin-bottom: 70px;
+}
+.happy ul li p.img{
+    width: 380px;
+    height: 250px;
+    margin-right: 0;
+    float: right;
+    overflow: hidden;
+}
+.happy ul li p.img img{
+    width: 100%;
+    transition: all 0.3s;
+}
+.happy ul li a:after{
+    content: '';
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 63%;
+    height: 2px;
+    background: rgba(237, 237, 233, 0.42);
+}
+.happy ul li:nth-child(2) a:after{
+    width: 60%;
+}
+.happy ul li:nth-child(3) a:after{
+    width: 43%;
+}
+.happy ul li a:hover .img img{
+    transform: scale(1.2);
+    transition: all 1s;
+}
+/*section.about*/
+section.about {width: 95%; margin:40px auto;  text-align: center; position: relative;}
+section.about img {width: 100%;}
+section.about .inner {width: 100%; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
+section.about .inner h2 {font-size: 30px; color: #fff; font-weight: normal;}
+section.about .inner .line {width: 35%;margin: 80px auto 30px; position: relative; }
+section.about .inner .line span {display: block; width: 100%; height: 1px; background: rgba(255, 255, 255, 0.25); }
+section.about .inner .line li{width: 6px; height: 6px; border-radius: 50%; background: #fff; position: absolute;}
+section.about .inner .line li.a {left: 0; top:-2px;}
+section.about .inner .line li.b{left: 50%; transform: translateX(-50%); top:-2px;}
+section.about .inner .line li.c {right: 0; top:-2px;}
+section.about .inner .line li:before {content: ''; width: 100%; height: 100%; border-radius: 50%; background: rgba(255,255, 255, 0.70); position:absolute; left: 50%; top:50%; margin-top: -3px;margin-left: -3px; animation: dot 1.5s infinite;}
+/*animation-iteration-count: infinite; 애니메이션 무한반복*/
+
+@keyframes dot {
+    100%{opacity: 1; transform: scale(3.5); opacity: 0;}
+}
+section.about .inner ul {width: 60%; margin: 0 auto;}
+section.about .inner ul li { color: rgb(246, 248, 148);float: left; width: 33.3333%; font-size: 17px; font-weight: 100;}
+section.about .inner ul li h3{font-size: 18px; margin-bottom: 20px; font-weight: normal; color:#fff;}
+
+/*animation*/
+@keyframes opacity-ani {
+    0%{opacity: 0;}
+    70%{opacity: 0;}
+}
+
+@keyframes slid-up2 {
+    0%{opacity: 0;}
+   70%{opacity: 0; transform: translateY(40px);}
+}
+
+section.about .inner h2{animation-name:slid-up; animation-duration: 0.8s; }
+section.about .inner .line span {animation-name:opacity-ani; animation-duration: 0.8s;}
+section.about .inner .line li.a {animation-name:opacity-ani; animation-duration: 1.2s;}
+section.about .inner .line li.b {animation-name:opacity-ani; animation-duration: 1.6s;}
+section.about .inner .line li.c {animation-name:opacity-ani; animation-duration: 2s;}
+section.about .inner ul li {animation-name:slid-up2; animation-duration: 2.4s;}
+section.about .inner ul li:nth-child(2) {animation-name:slid-up2; animation-duration: 2.8s;}
+section.about .inner ul li:nth-child(3) {animation-name:slid-up2; animation-duration: 3.2s;}
+
+/*section.news*/
+.news{
+    width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.news .issue{
+    margin-top: 50px;
+    width: 49.25%;
+    float: left;
+    margin-right: 1.5%;
+    height: 280px;
+    background-image: url(../img16/wlrnqhs_2.1.1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.news .issue:nth-child(2){
+    margin-right: 0;
+    background-image: url(../img16/Untitled_2.1.1.jpg);
+}
+.news .issue h2{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.news .issue p{
+    font-size: 15px;
+    color: #333;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.news .issue p.num{
+    font-size: 14px;
+    padding: 3px 7px;
+    background: #7f8c97;
+    border-radius: 50%;
+}
+
+
+
+/*footer*/
+footer{
+    width: 100%;
+    height: auto;
+    background: #454545;
+    color: #adadad;
+    overflow: hidden;
+}
+footer .adress{
+    width: 1400px;
+    margin: 0 auto;
+    line-height: 1.7;
+    text-align: center;
+}
+footer .adress p{
+    margin: 50px;
+    text-align: center;
+}
+footer .adress .copy{
+    font-size: 14px;
+}
+
+.top{
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 80px;
+    height: 80px;
+    background: #454545;
+    border-radius: 50%;
+    background-image: url('../img16arrow.JPG');
+    background-size: 25px;
+    background-position: top;
+    position: relative;
+}
+.top a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.top p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width:420px) {
+    body{
+        width: 420px;
+        height: 2100px;
+        background-image: url(../img16/ccllo.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    nav{
+        font-size: 0.8em;
+        width: 420px;
+        height: 100px;
+        text-align: center;
+        color: white;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a9db80+0,96c56f+100;Green+3D+%232 */
+        background: rgba(121, 226, 230, 0.63); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(121, 226, 230, 0.63) 0%, rgba(121, 226, 230, 0.63) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(121, 226, 230, 0.63) 0%,rgba(121, 226, 230, 0.63) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(121, 226, 230, 0.63) 0%,rgba(121, 226, 230, 0.63) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 ); /* IE6-9 */
+     }
+     .main{
+         background-image: none;
+     }
+     .main .inner .mainTitle h2{
+         font-size: 50px;
+         left: 20px;
+     }
+     .main .inner .mainTitle p{
+         left: 30px;
+        width: 300px;
+     }
+     .video{
+        width: 330px; /*너비*/
+        padding: 5px;/*패딩*/
+        position: absolute;
+        left: 3%;
+        top: 62%;
+        margin-bottom: 20px;/*아래 요소와의 간격*/
+        background-color: rgba(112, 108, 108, 0.616);
+        border: 1px solid #ccc;/*<div>요소에 테두리 표시*/
+        line-height: 1.5;  
+
+     }
+     .video iframe{
+            width: 330px;
+            height: 180px;
+     }
+     .photo{
+         display: none;
+     }
+     .happy h2{
+         margin-right: 70%;
+     }
+     .happy ul li{
+         clear: both;
+         width: 380px;
+         margin-left: 20px;
+
+     }
+     section.about{
+         display: none;
+     }
+     .news .issue{
+         background-image: none;
+         background-color: darkgray;
+         border: 1px solid #000;
+         width: 300px;
+         margin-left: 60px;
+     }
+     .news .issue:nth-child(2){
+         clear: both;
+        background-image: none;
+        background-color: darkgray;
+        border: 1px solid #000;
+        width: 300px;
+        margin-left: 60px;
+     }
+     footer .adress{
+        width: 420px;
+        margin: 0 auto;
+        line-height: 1.7;
+        text-align: center;
+    }
+}

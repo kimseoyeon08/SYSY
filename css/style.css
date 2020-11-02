@@ -1,0 +1,312 @@
+            @charset "utf-8";
+            @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+            @import url(http://fonts.googleapis,com/css?family=Oleo+Script);
+            @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+            *{
+                margin: 0; padding: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #container{ width: 100%;
+                        height: 100%;
+                        background-size: 100%;}
+            header{
+                width: 100%;
+                height: 100% ;
+                background-size: cover;
+                margin: 0;
+                    }
+            section{
+                    position: relative;
+                    width: 100%;
+                    }
+            body{
+                background-image:url('../img16/fix3.jpg');
+                background-size: 100%;
+                width: 100%; height: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                font-family: 'Nanum Gothic', sans-serif; 
+                }
+            nav{
+                height: 60px;
+                line-height: 50px;
+                text-align: center;
+                color: white;
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a9db80+0,96c56f+100;Green+3D+%232 */
+                background: rgb(169,219,128); /* Old browsers */
+                background: -moz-linear-gradient(top,  rgba(169, 219, 128, 0.432) 0%, rgba(150, 197, 111, 0.432) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top,  rgba(169, 219, 128, 0.432) 0%,rgba(150, 197, 111, 0.432) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom,  rgba(169, 219, 128, 0.432) 0%,rgba(150, 197, 111, 0.432) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 ); /* IE6-9 */
+                }
+            #main-nav{
+                    list-style: none;
+                    margin: 0;
+                         }
+            #main-nav .span{display: inline-block;
+                             color:white;
+                            margin: 10px 20px;
+                            margin-right: 40px;
+                            
+                            }
+            .outer-menu-item{
+                display: inline-block;
+                margin: 5px 20px;
+                position: relative;
+                
+            }
+            .outer-menu-item:hover{
+                background: rgba(8, 71, 18, 0.63);
+                color:green;
+            }
+            .menu-title{
+                display: block;
+                height: 30px; line-height: 30px;
+                text-align: center;
+                padding: 5px 20px;
+            }
+            .inner-menu {
+                display: none;
+                position: absolute;
+                top: 40px; left: 0;
+                width: 100%;
+                background:rgba(0, 139, 139, 0.589);
+                box-shadow: 0 2px 6px rgba(5,5, 5, 0.9);
+                z-index: 1000;
+                text-align: center;
+                list-style: none;
+            }
+            .inner-menu-item>a{
+                display: block;
+                padding: 5px 10px;
+                color: black;
+            }
+            .inner-menu-item>a:hover{
+                background:black;
+                color: white;
+            }
+            #intro {width: 100%;}
+            h1{
+               font-size: 180px; 
+               text-align: center;
+               width: 100%;
+               height: 300px;
+               margin-top: 80px;
+                }
+                a{
+                 text-decoration: none;
+                 color: white;
+                 text-align: center;
+             }
+             #fx {
+                position: fixed;
+                top: 5px;
+                left: 5px;
+                width: 50px;
+                height: 50px;
+                z-index: 10;
+                background-image: url('../img16/house_50x50.png'); 
+            }
+             #photo {
+                 width: 100%;
+                 text-decoration: none;
+                 list-style: none;
+             }
+             section div ul {
+                 list-style: none;
+             }
+             .photoGallery .titleBox { position: relative; margin-bottom: 200px; text-align: center; color: #fff;}
+             .photoGallery .titleBox h3{font-size: 28px; font-family: 'Nanum Myeongjo', serif;animation-name: slid-up; animation-duration: 0.8s; margin-bottom: 10px;}
+             @keyframes slid-up {
+                 0%{ opacity: 0;}
+                 30%{ opacity: 0;  transform: translateY(20px);}
+             }
+             .photoGallery .titleBox p {animation-name: slid-up; animation-duration: 1s; }
+            .photoGallery .titleBox .btn{animation-name: slid-up; animation-duration: 1.1s;  font-family: 'Nanum Myeongjo', serif; display: block; margin: 20px auto 0; text-align: 
+                    center;font-size: 17px; width: 200px; font-weight: bold; padding: 8px 12px; color:rgb(0, 255, 170); border:1px solid #ddd; border-radius: 50px; position: relative;overflow: hidden;z-index: 1}
+            .photoGallery .titleBox .btn:after {content: ''; width: 0; height: 100%; background: rgba(8, 71, 18, 0.63);
+                    position: absolute; left: 0; top:0; z-index: -1; transition: all 0.5s;}
+            .photoGallery .titleBox .btn:hover:after {width: 100%;}
+            .photoGallery {width: 100%; padding-top: 100px;}
+            .photoGallery ul {width: 1280px; margin: 0 auto; padding: 0 50px; overflow: hidden; }
+            .photoGallery ul li {animation-name: slid-up; animation-duration: 1.1s; float: left; width: 31.3333%; margin-right: 3%; margin-bottom: 50px; }
+            .photoGallery ul li a{display: block; width: 100%; height: 100%; z-index: -1;}
+            .photoGallery ul li a:hover {transform: translateY(-20px);
+                transition: all 0.4s;}
+            .photoGallery ul li a:hover p.img img {opacity: 0.8; transition: all 0.3s;}
+            .photoGallery ul li:nth-child(1) {margin-top: 100px;}
+            .photoGallery ul li:nth-child(3) {margin-right: 0; margin-top: 100px;}
+            .photoGallery ul li a{display: block; width: 100%; height: 100%; transition: all 0.3s;}
+            .photoGallery ul li a p.img{width: 100%;}
+            .photoGallery ul li a p.img img {width: 100%;}
+            .photoGallery ul li a h3 {margin-top: 50px; padding-left: 35px; position: relative; position: relative;}
+            .photoGallery ul li a h3:after{content: '0';  font-size: 15px;display: block; width: 30px; height: 30px; line-height: 30px; border-radius: 50%; background: #ff8342;  position: absolute; left: 0; top:0;  z-index: -100;}
+            .photoGallery ul li a .inner {padding-left: 30px;}
+            .photoGallery ul li a p {line-height: 1.5;  }
+            .photoGallery ul li a p.date {font-size: 14px;color:#888;}
+            footer{
+              position: relative;
+              width: 100%;
+              height: 200px;
+              margin-top: 170px;
+                  }
+            footer p{
+                font-family: 'Oleo Script', cursive;
+                font-size: 1.5em;
+                line-height: 100px;
+                color:white;
+                text-align: center;
+                    }
+
+    /*미디어 쿼리*/
+            @media screen and (max-width:420px){
+               #container, nav{
+                   width: 410px;
+                   margin: 0 auto;
+               } 
+               body{
+                   background-image: url('../img16/forest.jpg') ;
+                   /*box-sizing: 100%;*/
+                   width: 420px;
+                   height: 100%;
+                   background-repeat: no-repeat;
+                   /*background-position: center;*/
+                   background-attachment: fixed;
+               }
+
+               nav{
+                   /*float: left;*/
+                   font-size: 0.8em;
+                   width: 420px;
+                height: 100px;
+                /*line-height: 10px;*/
+                text-align: center;
+                color: white;
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a9db80+0,96c56f+100;Green+3D+%232 */
+                background: rgba(41, 78, 10, 0.397); /* Old browsers */
+                background: -moz-linear-gradient(top,  rgba(41, 78, 10, 0.397) 0%, rgba(41, 78, 10, 0.397) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top,  rgba(41, 78, 10, 0.397) 0%,rgba(41, 78, 10, 0.397) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom,  rgba(41, 78, 10, 0.397) 0%,rgba(41, 78, 10, 0.397) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 ); /* IE6-9 */
+                }
+                #main-nav{
+                    list-style: none;
+                    margin: 0;
+                         }
+                #main-nav .span{display: inline-block;
+                                color:white;
+                                margin: 10px 0;
+                                margin-right: 40px;
+                            
+                            }
+                .outer-menu-item{
+                    display: inline-block;
+                    margin: 5px 20px;
+                    position: relative;
+                    
+                }
+                .outer-menu-item:hover{
+                    background: rgba(255, 255, 255, 0.63);
+                    color:rgb(9, 44, 9);
+                    border-radius: 10%;
+                }
+                .menu-title{
+                    display: block;
+                    height: 30px; line-height: 30px;
+                    text-align: center;
+                    padding: 5px 20px;
+                }
+                .inner-menu {
+                    display: none;
+                    position: absolute;
+                    top: 40px; left: 0;
+                    width: 100%;
+                    background:rgba(0, 139, 139, 0.589);
+                    box-shadow: 0 2px 6px rgba(5,5, 5, 0.9);
+                    z-index: 1000;
+                    text-align: center;
+                    list-style: none;
+                }
+                .inner-menu-item>a{
+                    display: block;
+                    padding: 5px 10px;
+                    color: black;
+                }
+                .inner-menu-item>a:hover{
+                    background:black;
+                    color: white;
+                }
+                #intro {width: 100%;}
+                h1{
+                    font-size: 40px; 
+                    text-align: center;
+                    width: 100%;
+                    height: 100px;
+                    margin-top: 150px;
+                    color: black;
+                     }
+                     a{
+                      text-decoration: none;
+                      color: white;
+                      text-align: center;
+                    }
+                    #photo {
+                        width: 50%;
+                        text-decoration: none;
+                        list-style: none;
+                    }
+                    .photoGallery .titleBox { position: relative; margin-bottom: 100px; text-align: center; color: rgb(114, 114, 114);}
+                    .photoGallery .titleBox h3{font-size: 28px; font-family: 'Nanum Myeongjo', serif;animation-name: slid-up; animation-duration: 0.8s; margin-bottom: 10px;
+                                                color: rgb(0, 255, 170);}
+                    @keyframes slid-up {
+                        0%{ opacity: 0;}
+                        30%{ opacity: 0;  transform: translateY(20px);}
+                    }
+                    .photoGallery .titleBox p {animation-name: slid-up; animation-duration: 1s;  color: rgb(0, 255, 170);}
+                   .photoGallery .titleBox .btn{animation-name: slid-up; animation-duration: 1.1s;  font-family: 'Nanum Myeongjo', serif; display: block; margin: 20px auto 0; text-align: 
+                           center;font-size: 17px; width: 200px; font-weight: bold; padding: 8px 12px; color:white; border:1px solid #ddd; border-radius: 50px; position: relative;overflow: hidden;z-index: 1}
+                   .photoGallery .titleBox .btn:after {content: ''; width: 0; height: 100%; background: rgba(8, 71, 18, 0.63);
+                           position: absolute; left: 0; top:0; z-index: -1; transition: all 0.5s;}
+                   .photoGallery .titleBox .btn:hover:after {width: 100%;}
+                   .photoGallery {width: 100%; padding-top: 100px;}
+                   .photoGallery ul {width: 420px; margin: 0 auto; padding: 0 50px; overflow: hidden; }
+                   .photoGallery ul li {display: block;animation-name: slid-up; animation-duration: 1.1s; clear: both; width: 80%; margin-right: 0.5%; margin-bottom: 50px; }
+                   .photoGallery ul li a{display: block; width: 100%; height: 100%; z-index: -1;}
+                   .photoGallery ul li a:hover {transform: translateY(-20px);
+                       transition: all 0.4s;}
+                   .photoGallery ul li a:hover p.img img {opacity: 0.8; transition: all 0.3s;}
+                   .photoGallery ul li:nth-child(1) {margin-top: 100px;}
+                   .photoGallery ul li:nth-child(3) {margin-right: 0; margin-top: 100px;}
+                   .photoGallery ul li a{display: block; width: 100%; height: 100%; transition: all 0.3s;}
+                   .photoGallery ul li a p.img{width: 100%;}
+                   .photoGallery ul li a p.img img {width: 100%;}
+                   .photoGallery ul li a h3 {margin-top: 50px; padding-left: 35px; position: relative; position: relative;}
+                   .photoGallery ul li a h3:after{content: '\f178'; font-family: fontAwesome; font-size: 15px;display: block; width: 30px; height: 30px; line-height: 30px; border-radius: 50%; background: #ff8342;  position: absolute; left: 0; top:0;  z-index: -100;}
+                   .photoGallery ul li a .inner {padding-left: 30px;}
+                   .photoGallery ul li a p {line-height: 1.5;  }
+                   .photoGallery ul li a p.date {font-size: 14px;color:#888;}
+                   footer{
+                     position: relative;
+                     width: 100%;
+                     height: 100px;
+                     margin-top: 170px;
+                         }
+                    footer .adress p{
+                        position: absolute;
+                        top: 30px;
+                        margin: 50px;
+                        text-align: center;
+                    }
+                    footer .adress .copy{
+                        font-size: 14px;
+                    }
+                @media screen and (max-width:380px){
+                    body{
+                        background-image: url(../img16/forest.jpg);
+                        width: 380px;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        background-attachment: fixed;
+                    }
+                }

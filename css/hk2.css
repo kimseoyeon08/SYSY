@@ -1,0 +1,490 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+     list-style: none;
+ }
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/*layout*/
+body {
+    font-family: 'Nanum Gothic', sans-serif; 
+    font-size: 16px;
+    color: #333;
+    line-height: 1.25;
+    }
+    #fx {
+        position: fixed;
+        top: 5px;
+        left: 5px;
+        width: 50px;
+        height: 50px;
+        z-index: 10;
+        background-image: url('../img16/house_50x50.png'); 
+    }
+header{
+    width: 100%;
+    height: 90px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+nav{
+    height: 60px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a9db80+0,96c56f+100;Green+3D+%232 */
+    background: rgba(121, 226, 230, 0.63); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(121, 226, 230, 0.63) 0%, rgba(121, 226, 230, 0.63) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(121, 226, 230, 0.63) 0%,rgba(121, 226, 230, 0.63) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(121, 226, 230, 0.63) 0%,rgba(121, 226, 230, 0.63) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 ); /* IE6-9 */
+    }
+#main-nav{
+        list-style: none;
+        margin: 0;
+             }
+#main-nav .span{display: inline-block;
+                 color:white;
+                margin: 10px 20px;
+                margin-right: 40px;
+                
+                }
+.outer-menu-item{
+    display: inline-block;
+    margin: 5px 20px;
+    position: relative;
+    
+}
+.outer-menu-item:hover{
+    color:rgb(151, 70, 70);
+}
+.menu-title{
+    display: block;
+    height: 30px; line-height: 30px;
+    text-align: center;
+    padding: 5px 20px;
+}
+.inner-menu {
+    display: none;
+    position: absolute;
+    top: 40px; left: 0;
+    width: 100%;
+    background:rgba(0, 139, 139, 0.589);
+    box-shadow: 0 2px 6px rgba(5,5, 5, 0.9);
+    z-index: 1000;
+    text-align: center;
+    list-style: none;
+}
+.inner-menu-item>a{
+    display: block;
+    padding: 5px 10px;
+    color: black;
+}
+.inner-menu-item>a:hover{
+    background:black;
+    color: white;
+}
+
+
+/*section.main*/
+.main {
+    width: 100%;
+    height: auto;
+    background-image: url(../img16/mononoke.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 60px;
+
+}
+.main .inner{
+    width: 1400px;
+    height: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.main .inner .mainTitle {
+    width: 653px;
+    height: auto;
+    /*position: absolute;
+    top: 30%;
+    left: 0;*/
+}
+.main .inner .mainTitle h2{
+    font-size: 80px;
+    line-height: 1.3;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    animation-name: titani;
+    animation-duration: 1s;
+    color:rgb(151, 70, 70);
+}
+@keyframes titani{
+    0%{
+        opacity: 0;
+        top: 0;
+    }
+    30%{
+        opacity: 0;
+        top: 0;
+    }
+    100%{
+        opacity: 1;
+        top: 10%;
+    }
+}
+.main .inner .mainTitle p{
+    font-size: 19px;
+    line-height: 1.6;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    color: white;
+    animation-name: titani-p;
+    animation-duration: 0.5s;
+}
+@keyframes titani-p{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    30%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.main .inner .explain p{
+    font-size: 19px;
+    line-height: 1.6;
+    position: absolute;
+    left: -200px;
+    top: 60%;
+    color: white;
+    animation-name: titani-p;
+    animation-duration: 0.5s;
+    width: 400px;
+    padding: 10px;
+    background-color:rgba(155, 155, 155, 0.623);
+    border: 1px solid #ccc;
+}
+.video{
+    width: 560px; /*너비*/
+    padding: 20px;/*패딩*/
+    float: right;
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    background-color: rgba(112, 108, 108, 0.616);
+    border: 1px solid #ccc;/*<div>요소에 테두리 표시*/
+}
+
+
+/*section.smart*/
+.smart{
+    width: 100%;
+    height: auto;
+    background-image: url('../img16/purpletree_1.1.2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+}
+.smart .inner{
+    width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+.smart .inner h2{
+    font-size: 40px;
+    margin-bottom: 60px;
+    color:rgb(64, 189, 194);
+}
+.smart .inner ul{
+    width: 30%;
+    float: left;
+}
+.smart .inner ul li{
+    width: 100%;
+}
+.smart .inner ul li a{
+    display: block;
+    width: 100%;
+    position: relative;
+    text-align: left;
+}
+.smart .inner ul li a .img{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+.smart .inner ul li a .img img{
+    width: 100%;
+}
+.smart .inner ul li a h3{
+    font-size: 22px;
+    line-height: 1.5;
+    position: absolute;
+    top: 55%;
+    color: #fff;
+    left: 40%;
+}
+.smart .inner ul li:nth-child(2) a h3{
+    color:black;
+}
+.smart .inner ul li a:before{
+    content: 'NO.1';
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 25px;
+    border-bottom: 5px solid #fff;
+}
+.smart .inner ul li:nth-child(2) a:before{
+    content: 'NO.2';
+}
+.smart .row{
+    float: right;
+    width: 70%;
+    height: 437px;
+}
+.smart .row .guide{
+    width: 50%;
+    float: left;
+    background: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box; 
+}
+.smart .row .guide > p{
+    width: 30%;
+    margin-top: 30px;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 20px auto;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+.smart .row .guide p.img{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.smart .row .guide p.img img{
+    width: 100%;transition: all 0.5s;
+}
+.smart .row .guide a:hover p.img img{
+    transform: scale(1.3);
+    transition: all 1s;
+}
+.smart .row .guide:nth-child(1){
+    border-right: 1px solid #ddd;
+}
+.smart .row .guide h3{
+    margin-bottom: 30px;
+}
+
+
+/*section.news*/
+.news{
+    width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.news .issue{
+    margin-top: 50px;
+    width: 49.25%;
+    float: left;
+    margin-right: 1.5%;
+    height: 280px;
+    background-image: url(../img16/wrabbit_2.1.1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.news .issue:nth-child(2){
+    margin-right: 0;
+    background-image: url(../img16/wwww_2.1.1.png);
+}
+.news .issue h2{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.news .issue p{
+    font-size: 15px;
+    color: #333;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.news .issue p.num{
+    font-size: 14px;
+    padding: 3px 7px;
+    background: #7f8c97;
+    border-radius: 50%;
+}
+
+
+
+/*footer*/
+footer{
+    width: 100%;
+    height: auto;
+    background: #454545;
+    color: #adadad;
+    overflow: hidden;
+}
+footer .adress{
+    width: 1400px;
+    margin: 0 auto;
+    line-height: 1.7;
+    text-align: center;
+}
+footer .adress p{
+    margin: 50px;
+    text-align: center;
+}
+footer .adress .copy{
+    font-size: 14px;
+}
+
+.top{
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 80px;
+    height: 80px;
+    background: #454545;
+    border-radius: 50%;
+    background-image: url('../img16arrow.JPG');
+    background-size: 25px;
+    background-position: top;
+    position: relative;
+}
+.top a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.top p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width:420px){
+    body{
+        width: 420px;
+        height: 2100px;
+        background-image: url(../img16/blueflower.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    nav{
+        font-size: 0.8em;
+        width: 420px;
+        height: 100px;
+        text-align: center;
+        color: white;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a9db80+0,96c56f+100;Green+3D+%232 */
+        background: rgba(121, 226, 230, 0.63); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(121, 226, 230, 0.63) 0%, rgba(121, 226, 230, 0.63) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(121, 226, 230, 0.63) 0%,rgba(121, 226, 230, 0.63) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(121, 226, 230, 0.63) 0%,rgba(121, 226, 230, 0.63) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 ); /* IE6-9 */
+     }
+     .main{
+        background-image: none;
+    }
+    .main .inner .mainTitle h2{
+        font-size: 50px;
+        left: 20px;
+    }
+    .main .inner .mainTitle p{
+        left: 30px;
+       width: 300px;
+    }
+    .main .inner .explain p{
+        width: 340px;
+        position: absolute;
+        left: 3%;
+        top: 75%;
+    }
+    .video{
+        width: 330px; /*너비*/
+        padding: 5px;/*패딩*/
+        position: absolute;
+        left: 1%;
+        top: 98%;
+        margin-bottom: 20px;/*아래 요소와의 간격*/
+        background-color: rgba(112, 108, 108, 0.616);
+        border: 1px solid #ccc;/*<div>요소에 테두리 표시*/
+        line-height: 1.5;  
+     }
+    .video iframe{
+        width: 330px;
+        height: 180px;
+ }
+ .smart{
+     background-image: none;
+     width: 420px;
+ }
+ .smart .inner h2{
+    text-align: left;
+     margin-top: 80px;
+ }
+ .smart .row {
+     display: none;
+ }
+ .news .issue{
+    background-image: none;
+    background-color: darkgray;
+    border: 1px solid #000;
+    width: 300px;
+    margin-left: 60px;
+}
+.news .issue:nth-child(2){
+    clear: both;
+   background-image: none;
+   background-color: darkgray;
+   border: 1px solid #000;
+   width: 300px;
+   margin-left: 60px;
+}
+footer .adress{
+    width: 420px;
+    margin: 0 auto;
+    line-height: 1.7;
+    text-align: center;
+}
+}

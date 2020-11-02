@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Environment</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.outer-menu-item').hover(function(){
+            $(this). find('.inner-menu').show();
+            },function(){
+                $(this).find('.inner-menu').hide();
+            });
+        });
+    </script>     
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <nav>
+                    <ul id="main-nav">
+                        <li class="outer-menu-item">
+                            <span class="menu-title">ENVIRONMENT</span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="en_sub1.html">데이지</a></li>
+                                <li class="inner-menu-item"><a href="#">해바라기</a></li>
+                                <li class="inner-menu-item"><a href="#">해바라기</a></li>
+                            </ul>                    
+                        </li>
+                        <li class="outer-menu-item">
+                            <span class="menu-title">ECOSYSTEM</span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="#">데이지</a></li>
+                                <li class="inner-menu-item"><a href="#">해바라기</a></li>
+                                <li class="inner-menu-item"><a href="#">해바라기</a></li>
+                            </ul>                    
+                        </li>
+                        <li class="outer-menu-item">
+                            <span class="menu-title">RESULT</span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="#">데이지</a></li>
+                                <li class="inner-menu-item"><a href="#">해바라기</a></li>
+                                <li class="inner-menu-item"><a href="#">해바라기</a></li>
+                            </ul>                    
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="intro">
+                <div class="page-title">
+                    <h1>
+                        <a href="#">ENVIRONMENT</a>
+                    </h1>
+                </div>
+            </section>
+            <footer>
+                <p>용동중학교 3학년 4반 김서연</p>
+            </footer>
+        </div>
+    </body>
+</html>

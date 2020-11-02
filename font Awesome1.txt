@@ -1,0 +1,13 @@
+*무료 폰트어썸 다운로드경로
+https://fontawesome.com/v4.7.0/icons/
+
+<head>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<html>
+<i class="fa fa-heart-o" aria-hidden="true"></i>
+<i class="fa fa-chevron-left" aria-hidden="true"></i>
+<i class="fa fa-chevron-right" aria-hidden="true"></i>
+</html>
+

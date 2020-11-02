@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        nav ul li{
+            float: left;
+            margin: 5px 15px;
+            padding: 10px;
+            font-size: 0.8rem;
+        }
+        #container, nav{
+            width: 310px;
+            margin: 0 auto;
+        }
+        #intro {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        #intro img{
+            max-width: 100%;
+        }
+        #desc{
+            width: 100%;
+            padding: 10px;
+        }
+        footer{
+            width: 100%;
+            height: 60px;
+            background: #37001c;
+            color: white;
+        }
+        footer p{
+            text-align: center;
+        }
+        @media all and (min-width:768px) {
+            #container, nav{
+                    width: 750px;
+                    margin: 0 auto;
+            }
+            #intro{
+                width: 100%;
+            }
+            #intro img{
+                width: 200px;
+                margin: 20px;
+            }
+            #desc{
+                width: 100%;
+                padding: 0px;
+                margin: 10px auto;
+            }
+            footer{
+                height: 150px;
+                background-image: url('img16/footer.jpg') no-repeat center;
+                background-size: cover;
+            }
+            footer p{
+                line-height: 150px;
+            }
+        }
+        @media all and (min-width:1024px) {
+            #container, nav{
+                width: 1000px;
+                margin: 0 auto;
+            }
+            #intro img{
+                float: left;
+            }
+            #desc{
+                display: inline-block;
+                width: 250px;
+                height: 200px;
+                padding: 5px;
+                border: 1px dotted #ccc;
+            }
+            footer{
+                clear: both;
+                height: 200px;
+                background: url(img16/footer.jpg) no-repeat center;
+                background-size: cover;
+            }
+            footer p{
+                line-height: 200px
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>메뉴</li>
+                <li>메뉴</li>
+                <li>메뉴</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="container">
+        <section id="intro">
+            <img src="img16/flower.jpg">
+            <img src="img16/flower.jpg">
+            <img src="img16/flower.jpg">
+        </section>
+        <section id="desc" class="text">
+            <p>있는 이것을 능히 보이는 투명하되 이상의 낙원을 칼이다. 위하여 같이 힘차게 오직 듣는다. 뭇 창공에 천지는 말이다. 같이,
+                있는 열매를 말이다. 있는 그것을 능히 보이는 투명하되 이상의 낙원을 칼이다.
+            </p>
+        </section>
+        <footer>
+            <p>뭇 창공에 천지는 말이다. 같이, 있는 되는 열매를 말이다.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,382 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+ /*reset*/
+
+ *{
+     margin: 0;
+     padding: 0;
+    }
+li{
+    list-style: none;
+}
+.wrap{ 
+    width: 100%;
+    height: 1350px;
+    background-size: 100%;
+    background-size: cover;
+    margin: 0;
+            }
+body{
+    background-image: url('../img16/lion.jpg');
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Nanum Gothic', sans-serif; 
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    margin: 0;
+}
+nav{
+    height: 60px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a9db80+0,96c56f+100;Green+3D+%232 */
+    background: rgb(119, 136, 58, 0.432); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(119, 136, 58, 0.432) 0%, rgba(119, 136, 58, 0.432) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(119, 136, 58, 0.432) 0%,rgba(119, 136, 58, 0.432) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(119, 136, 58, 0.432) 0%,rgba(119, 136, 58, 0.432) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 ); /* IE6-9 */
+    }
+#main-nav{
+        list-style: none;
+        margin: 0;
+             }
+#main-nav .span{display: inline-block;
+                 color:white;
+                margin: 10px 20px;
+                margin-right: 40px;
+                
+                }
+.outer-menu-item{
+    display: inline-block;
+    margin: 5px 20px;
+    position: relative;
+    
+}
+.outer-menu-item:hover{
+    color:brown;
+}
+.menu-title{
+    display: block;
+    height: 30px; line-height: 30px;
+    text-align: center;
+    padding: 5px 20px;
+}
+.inner-menu {
+    display: none;
+    position: absolute;
+    top: 40px; left: 0;
+    width: 100%;
+    background:rgba(128, 107, 18, 0.589);
+    box-shadow: 0 2px 6px rgba(5,5, 5, 0.9);
+    z-index: 1000;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+.inner-menu-item>a{
+    display: block;
+    padding: 5px 10px;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+.inner-menu-item>a:hover{
+    background:rgba(121, 93, 33, 0.678);
+    color: white;
+}
+#fx {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    background-image: url('../img16/house_50x50.png'); 
+}
+.header{
+    margin-top: 30px;
+    margin-left: 40px;
+    display: inline-block;
+}
+.header h1{
+    font-size: 70px;
+    color:rgb(255, 230, 0);
+}
+.container{
+    width: 100%;
+    height: 100%; 
+    position: relative;
+}
+.main{
+    width: 620px; /*너비*/
+    padding: 20px;/*패딩*/
+    float: left;/*왼쪽으로 플로팅*/
+    margin: 40px 0 30px 50px;
+    background-color: rgba(112, 108, 108, 0.616);
+    border: 1px solid #ccc;/*<div>요소에 테두리 표시*/
+}
+.main span{
+    color: rgb(138, 36, 36);
+    font-size: 30px;
+}
+.img{
+    width: 620px; /*너비*/
+    padding: 20px;/*패딩*/
+    float: right;/*왼쪽으로 플로팅*/
+    margin: 40px 30px 20px 0;
+    background-color: rgba(112, 108, 108, 0.616);
+    border: 1px solid #ccc;/*<div>요소에 테두리 표시*/
+}
+.img span{
+    color: rgba(30, 43, 158, 0.603);
+    font-size: 30px;
+}
+.contents {    /*width: 620px; 너비*/
+    padding: 20px;/*패딩*/
+    float: left;/*왼쪽으로 플로팅*/
+    margin: 60px 0 20px 50px;
+    background-color: rgba(112, 108, 108, 0.616);
+    border: 1px solid #ccc;/*<div>요소에 테두리 표시*/
+    height: 500px;}
+.contents h2 {
+    font-size: 38px;  
+    padding: 10px 5px;
+        }
+.contents ul {
+    width: 95%;  
+    margin: 0 auto; 
+    overflow: hidden; 
+        }
+.contents ul li { 
+    float: left; 
+    width: 32%; 
+    margin-right: 2%;
+        }
+.contents ul li:nth-child(3) {
+    margin-right: 0;
+        }
+.contents ul li .imgBox {
+    width: 100%; 
+    height: 300px;
+    background: url(../img16/wolf.jpg)no-repeat left 0px top 0px/cover; 
+    padding: 30px; 
+    box-sizing: border-box; 
+    color:#fff;
+    margin-bottom: 30px; 
+        }
+.contents ul li:nth-child(2) .imgBox {
+    background: url(../img16/gpanda.png)no-repeat center/cover;
+        }
+.contents ul li:nth-child(3) .imgBox {
+    background: url(../img16/wbear.jpg)no-repeat center/cover;
+        }
+.contents ul li .imgBox > p {
+    font-size: 14px; 
+    margin-bottom: 15px; 
+        }
+.contents ul li .imgBox .slogan {
+    font-size: 24px; 
+    font-weight: 500; 
+    line-height: 1.2;
+        }
+.contents ul li > span {
+    font-size: 14px; 
+    font-weight: bold; 
+    color: #00d8ff; 
+    margin-bottom: 20px; 
+    display: block;
+        }
+/*span은 인라인속성이므로 margin이 적용되지 않아서 block 속성으로 변경해줘야 margin이 적용됨*/
+.contents ul li .tit {
+    font-size: 24px; 
+    line-height: 1.2; 
+    margin-bottom: 40px; 
+        }
+.contents ul li:nth-child(3) .imgBox p{
+    color: black;
+}
+
+/*.video{
+    background-color: rgba(112, 108, 108, 0.616);
+    border: 1px solid #ccc;/*<div>요소에 테두리 표시
+    float: right;
+    padding: 20px;
+    margin-right: 50px;
+    margin-top: 20px;
+}*/
+footer{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    margin-top: 30px;
+    background-color: rgba(163, 95, 18, 0.514);
+        }
+footer p{
+        text-align: center;
+        font-size: 20px;
+        }
+@media screen and (max-width:420px){
+    body{
+        width: 420px;
+        background-image: url('../img16/zebra.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+    .container{
+        width: 420px;
+        height: 3200px;
+    }
+    .container, #nav{
+        width: 420px;
+        margin: 0 auto;
+    } 
+    nav{
+        /*float: left;*/
+        font-size: 0.8em;
+        width: 420px;
+     height: 100px;
+     /*line-height: 10px;*/
+     text-align: center;
+     color: white;
+     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a9db80+0,96c56f+100;Green+3D+%232 */
+     background: rgba(178, 119, 226, 0.397); /* Old browsers */
+     background: -moz-linear-gradient(top,  rgba(178, 119, 226, 0.397) 0%, rgba(178, 119, 226, 0.397) 100%); /* FF3.6-15 */
+     background: -webkit-linear-gradient(top,  rgba(178, 119, 226, 0.397) 0%,rgba(178, 119, 226, 0.397) 100%); /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(to bottom,  rgba(178, 119, 226, 0.397) 0%,rgba(178, 119, 226, 0.397) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 ); /* IE6-9 */
+     }
+     #main-nav{
+         list-style: none;
+         margin: 0;
+              }
+     #main-nav .span{display: inline-block;
+                     color:white;
+                     margin: 10px 0;
+                     margin-right: 40px;
+                 
+                 }
+     .outer-menu-item{
+         display: inline-block;
+         margin: 5px 20px;
+         position: relative;
+         
+     }
+     .outer-menu-item:hover{
+         color:rgb(172, 12, 247);
+     }
+     .menu-title{
+         display: block;
+         height: 30px; line-height: 30px;
+         text-align: center;
+         padding: 5px 20px;
+     }
+     .inner-menu {
+         display: none;
+         position: absolute;
+         top: 40px; left: 0;
+         width: 100%;
+         background:rgba(58, 66, 136, 0.589);
+         box-shadow: 0 2px 6px rgba(5,5, 5, 0.9);
+         z-index: 1000;
+         text-align: center;
+         list-style: none;
+     }
+     .inner-menu-item>a{
+         display: block;
+         padding: 5px 10px;
+         color: black;
+     }
+     .inner-menu-item>a:hover{
+         background:black;
+         color: white;
+     }
+     .header{
+        margin-top: 20px;
+        margin-left: 10px;
+        display: block;
+     }
+    .header h1{
+        color: lightsalmon;
+        font-size: 50px;
+    }
+    .main {
+        width: 330px; /*너비*/
+        padding: 5px;/*패딩*/
+        float: left;/*왼쪽으로 플로팅*/
+        margin-bottom: 20px;/*아래 요소와의 간격*/
+        background-color: rgba(112, 108, 108, 0.616);
+        border: 1px solid #ccc;/*<div>요소에 테두리 표시*/
+        line-height: 1.5;
+        }
+    .main p{
+        color: white;
+    }
+    .img{
+        width: 330px; /*너비*/
+        padding: 5px;/*패딩*/
+        float: left;/*왼쪽으로 플로팅*/
+        margin-bottom: 20px;/*아래 요소와의 간격*/
+        background-color: rgba(112, 108, 108, 0.616);
+        border: 1px solid #ccc;/*<div>요소에 테두리 표시*/
+        line-height: 1.5;  
+        color: whitesmoke;
+    }
+    .img iframe{
+        width: 300px;
+        height: 180px;
+    }
+
+    /*.contents{
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+    }
+    .contents h2{
+        color:rgba(230, 155, 70, 0.726);
+        font-size: 30px;
+    }
+    .contents ul li{
+        float: none;
+        width: 0%;
+    }
+    .contents ul li .imgBox{
+        width: 100px;
+        height: 100px;
+    }*/
+    .contents{
+        margin: 0;
+        clear: both;
+        background-color:rgba(255, 255, 255, 0);
+        border: none;
+    }
+    .contents h2{
+        font-size: 30px;
+        color: rgb(153, 122, 122);
+    }
+    .contents ul li{
+        clear: both;
+        width: 100%;
+        margin: 20px auto;
+    }
+    .contents .slogan{
+        color: white;
+    }
+    .contents .sub{
+        color: white;
+    }
+    .contents .tit{
+        color: white;
+    }
+    footer{
+        height: 70px;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Environment</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.outer-menu-item').hover(function(){
+            $(this). find('.inner-menu').show();
+            },function(){
+                $(this).find('.inner-menu').hide();
+            });
+        });
+    </script>  
+    </head>
+    <body>
+        <div>
+            <!-- 
+            <a href="index.html"><p><img src="img16/house_50x50_1.png" alt=""></p></a>
+            -->
+            <a href="index.html"><p id="fx"></p></a>
+        </div>
+        <div id="container">
+            <header>
+                <nav>
+                    <ul id="main-nav">
+                        <li class="outer-menu-item">
+                            <span class="menu-title">ENVIRONMENT</span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="en_sub1_1.html"> 토양 오염</a></li>
+                                <li class="inner-menu-item"><a href="en_sub1_2.html">환경 오염</a></li>
+                                <li class="inner-menu-item"><a href="en_sub1_3.html">대기 오염</a></li>
+                            </ul>                    
+                        </li>
+                        <li class="outer-menu-item">
+                            <span class="menu-title">ECOSYSTEM</span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="en_sub2_1.html">동물</a></li>
+                                <li class="inner-menu-item"><a href="en_sub2_2.html">식물</a></li>
+                                <li class="inner-menu-item"><a href="en_sub2_3.html">자연</a></li>
+                            </ul>                    
+                        </li>
+                        <li class="outer-menu-item">
+                            <span class="menu-title">WAY</span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="hk1.html">환경</a></li>
+                                <li class="inner-menu-item"><a href="hk2.html">생태계</a></li>
+                                <li class="inner-menu-item"><a href="hk3.html">당부</a></li>
+                            </ul>                    
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="intro">
+                <div class="page-title">
+                    <h1>
+                        <a href="en_main1.html">ENVIRONMENT</a>
+                    </h1>
+                </div>
+            </section>
+            <section class="photoGallery">  
+                <div class="photo">
+                        <div class="titleBox">
+                                <h3>인간의 잔인함</h3>
+                                <p>우리 인간들은 도대체 얼마나<br>잔인하나요</p>
+                                <a href="en_main1.html" class="btn">또 다른 자료들</a>
+                            </div>
+                <ul>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=oUqbBwEV8O0"><p class="img"><img src="img16/dear.jpg" width = 100px alt=""></p>
+                        <h3>호주 산불은 우연이 겹친 사고였을까?</h3>
+                       <div class="inner">
+                             <p></p>
+                            <p></p>
+                            <p class="date">그거앎? ggrm?</p>
+                        </div>
+                    </a></li>
+                    <li>
+                        <a href="https://imnews.imbc.com/news/2020/world/article/5947912_32640.html"><p class="img"><img src="img16/bear.jpg" width = 100px alt=""></p>
+                        <h3>북극곰, 먹이 구하러 쓰레기 트럭에 구걸</h3>
+                        <div class="inner">
+                            <p></p>
+                            <p></p>
+                            <p class="date">함수연 기자님</p>
+                        </div>
+                    </a></li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=LF78rK91qGg"><p class="img"><img src="img16/earth.jpg" width = 100px alt=""></p>
+                        <h3>지구 평균 기온을 1도씩 올려보니 '충격적 결과' </h3>
+                        <div class="inner">
+                            <p></p>
+                            <p></p>
+                            <p class="date">이웃집과학자</p>
+                        </div>
+                    </a></li>
+                </ul>
+                </div>
+            </section>
+            
+            <footer>
+                <div class="adress">
+                    <p>용동중학교 3학년 김서연 <br>
+                    <span class="copy">Made by seoyeon</span>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

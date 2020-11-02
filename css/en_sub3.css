@@ -1,0 +1,286 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+*{ margin: 0; padding: 0;}
+body {
+    background-image: url('../img16/cloud1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    z-index: -10;
+    text-decoration: none;
+    font-family: 'Nanum Gothic', sans-serif; 
+}
+div { 
+    
+}
+#container {
+    width: 100%;
+    margin: 0 auto;
+    text-decoration: none;
+}
+nav{
+    height: 60px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    margin-bottom: 60px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a9db80+0,96c56f+100;Green+3D+%232 */
+    background:  rgba(38, 143, 116, 0.514) ; /* Old browsers */
+    background: -moz-linear-gradient(top,   rgba(38, 143, 116, 0.514) 0%,   rgba(38, 143, 116, 0.514) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,   rgba(38, 143, 116, 0.514) 0%,  rgba(38, 143, 116, 0.514) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,   rgba(38, 143, 116, 0.514) 0%,  rgba(38, 143, 116, 0.514)100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 ); /* IE6-9 */
+    }
+#main-nav{
+        list-style: none;
+        margin: 0;
+        text-decoration: none;
+             }
+#main-nav .span{display: inline-block;
+                color:white;
+                margin: 10px 20px;
+                margin-right: 40px;
+                
+                }
+                .outer-menu-item{
+                    display: inline-block;
+                    margin: 5px 20px;
+                    position: relative;
+                    
+                }
+                .outer-menu-item:hover{
+                    /*background: rgba(16, 245, 188, 0.514);*/
+                    color:rgb(16, 33, 90);
+                }
+                .menu-title{
+                    display: block;
+                    height: 30px; line-height: 30px;
+                    text-align: center;
+                    padding: 5px 20px;
+                }
+                .inner-menu {
+                    display: none;
+                    position: absolute;
+                    top: 40px; left: 0;
+                    width: 100%;
+                    background:rgba(46, 106, 196, 0.589);
+                    box-shadow: 0 2px 6px rgba(5,5, 5, 0.9);
+                    z-index: 1000;
+                    text-align: center;
+                    list-style: none;
+                    text-decoration: none;
+                }
+                .inner-menu-item>a{
+                    display: block;
+                    padding: 5px 10px;
+                    color: black;
+                    text-decoration: none;
+                }
+                .inner-menu-item>a:hover{
+                    background:rgba(121, 121, 121, 0.521);
+                    color: white;
+                }
+            
+            #fx {
+                position: fixed;
+            top: 5px;
+            left: 5px;
+            width: 50px;
+            height: 50px;
+            z-index: 10;
+            background-image: url('../img16/house_50x50.png'); 
+            }
+#wrap {
+    width: 960px;/*컨테이너 너비*/
+    height: 1300px;
+    padding: 20px;/*패딩*/
+    margin: 0 auto;/*화면 중앙에 배치*/
+    border: 2px solid #ccc;/*<div>요소에 테두리 표시*/
+    position: relative;
+    background-color: rgba(112, 108, 108, 0.616);
+    z-index: 3;
+}
+#header {
+    padding: 20px;/*패딩*/
+    margin-bottom: 20px;/*아래 요소들과의 간격(마진)*/
+    color:rgba(4, 253, 241, 0.438) ;  
+    font-size: 30px;  
+}
+#contents {
+    width: 620px; /*너비*/
+    padding: 20px;/*패딩*/
+    float: left;/*왼쪽으로 플로팅*/
+    margin-bottom: 20px;/*아래 요소와의 간격*/
+    background-color: rgba(112, 108, 108, 0.616);
+    border: 1px solid #ccc;/*<div>요소에 테두리 표시*/
+    }
+#content{
+        width: 620px; /*너비*/
+        padding: 20px;/*패딩*/
+        float: left;/*왼쪽으로 플로팅*/
+        margin-bottom: 20px;/*아래 요소와의 간격*/
+        background-color: rgba(112, 108, 108, 0.616);
+        border: 1px solid #ccc;/*<div>요소에 테두리 표시*/
+        }
+#contents h2 {
+    font-size: 20px;
+    display: inline-block;
+}
+#contents span {
+    color:rgb(34, 64, 148);
+}
+#contents a{
+    text-decoration: none;
+}
+#content h2 {
+    font-size: 20px;
+    display: inline-block;
+}
+#content span {
+    color:rgb(34, 64, 148);
+}
+#sidebar {
+    width: 220px;
+    padding: 20px;
+    float: right;
+    margin-bottom: 20px;
+    background-color: rgba(38, 60, 185, 0.418);
+    border: 1px solid #ccc;/*<div>요소에 테두리 표시*/
+}
+#sidebar li{
+    list-style: none;
+}
+#sidebar a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.63);
+}
+#footer {
+    clear: both;
+    width: 100%;
+    padding: 40px 0px;
+    background-color: rgba(38, 155, 185, 0.411);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+#footer p{
+    text-align: center;
+}
+@media screen and (max-width:420px){
+    nav{
+        margin-bottom: 40px;
+        /*float: left;*/
+        font-size: 0.8em;
+        width: 100%;
+     height: 100px;
+     /*line-height: 10px;*/
+     text-align: center;
+     color: white;
+     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a9db80+0,96c56f+100;Green+3D+%232 */
+     background:  rgba(119, 224, 207, 0.514) ; /* Old browsers */
+     background: -moz-linear-gradient(top,   rgba(119, 224, 207, 0.514) 0%,   rgba(119, 224, 207, 0.514) 100%); /* FF3.6-15 */
+     background: -webkit-linear-gradient(top,   rgba(119, 224, 207, 0.514) 0%,  rgba(119, 224, 207, 0.514) 100%); /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(to bottom,   rgba(119, 224, 207, 0.514) 0%,  rgba(119, 224, 207, 0.514)100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 ); /* IE6-9 */
+     }
+     #main-nav{
+         list-style: none;
+         margin: 0;
+              }
+     #main-nav .span{display: inline-block;
+                     color:white;
+                     margin: 10px 0;
+                     margin-right: 40px;
+                 
+                 }
+     .outer-menu-item{
+         display: inline-block;
+         margin: 5px 20px;
+         position: relative;
+         
+     }
+     .outer-menu-item:hover{
+         color:rgb(43, 43, 43);
+     }
+     .menu-title{
+         display: block;
+         height: 30px; line-height: 30px;
+         text-align: center;
+         padding: 5px 20px;
+     }
+     .inner-menu {
+         display: none;
+         position: absolute;
+         top: 40px; left: 0;
+         width: 100%;
+         background:rgba(121, 121, 121, 0.589);
+         box-shadow: 0 2px 6px rgba(5,5, 5, 0.9);
+         z-index: 1000;
+         text-align: center;
+         list-style: none;
+     }
+     .inner-menu-item>a{
+         display: block;
+         padding: 5px 10px;
+         color: black;
+     }
+     .inner-menu-item>a:hover{
+         background:black;
+         color: white;
+     }
+    #container{
+        width: 420px;
+        height: 1000px;
+    }
+    body{
+        background-image: url('../img16/ccloudd.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+    #wrap{
+        width: 420px;
+        height: 1650px;
+        background-color: rgba(255, 255, 255, 0.63);
+        border: none;
+    }
+    #header {
+        padding: 10px;/*패딩*/
+        margin-bottom: 10px;/*아래 요소들과의 간격(마진)*/
+        color:rgb(19, 25, 51) ;  
+        font-size: 15px;  
+    }
+    #contents {
+        width: 360px; /*너비*/
+        padding: 5px;/*패딩*/
+        float: left;/*왼쪽으로 플로팅*/
+        margin-bottom: 20px;/*아래 요소와의 간격*/
+        background-color: rgba(112, 108, 108, 0.616);
+        border: 1px solid #ccc;/*<div>요소에 테두리 표시*/
+        line-height: 1.5;
+        }
+        #content {
+            width: 300px; /*너비*/
+            padding: 5px;/*패딩*/
+            float: left;/*왼쪽으로 플로팅*/
+            margin-bottom: 20px;/*아래 요소와의 간격*/
+            background-color: rgba(112, 108, 108, 0.616);
+            border: 1px solid #ccc;/*<div>요소에 테두리 표시*/
+            line-height: 1.5;
+            margin-top: 5px;
+            margin-left: 40px;
+            }
+        #content img{
+            width: 300px;
+            height: 170px;
+        }
+    #sidebar{
+        display: none;
+    }
+    #footer{
+        line-height: 1.5;
+        padding: 20px 0px;
+        background-color:rgba(145, 145, 145, 0.479);
+    }
+    }
